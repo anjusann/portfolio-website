@@ -134,3 +134,15 @@ body.dark .light-bg {
     cursor: pointer;
     font-size: 22px;
 }
+.btn-accent {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #fff;
+}
+
+.cert-list {
+    max-width: 700px;
+    margin: auto;
+    line-height: 2;
+    font-size: 16px;
+}
+
