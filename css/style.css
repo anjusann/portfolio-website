@@ -240,5 +240,12 @@ body.dark .light-bg {
     cursor: pointer;
     font-size: 22px;
 }
+/* GLOBAL CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* ==============================*
+
