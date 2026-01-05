@@ -1,30 +1,21 @@
 // DARK MODE
 const toggle = document.getElementById("themeToggle");
 toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    toggle.textContent =
-        document.body.classList.contains("dark") ? "☀️" : "🌙";
+  document.body.classList.toggle("dark");
+  toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
 // RESUME MODAL
 const modal = document.getElementById("resumeModal");
-document.getElementById("openResume").onclick =
-    () => modal.style.display = "block";
+document.getElementById("openResume").onclick = () => modal.style.display = "block";
+document.querySelector(".close").onclick = () => modal.style.display = "none";
+window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
 
-document.querySelector(".close").onclick =
-    () => modal.style.display = "none";
-
-window.onclick = e => {
-    if (e.target === modal) modal.style.display = "none";
-};
-
-// SCROLL ANIMATION
+// SCROLL REVEAL
 const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting)
-            entry.target.classList.add("show");
-    });
-});
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add("show");
+  });
+}, { threshold: 0.15 });
 
-document.querySelectorAll(".animate")
-    .forEach(el => observer.observe(el));
+document.querySelectorAll(".animate").forEach(el => observer.observe(el));
