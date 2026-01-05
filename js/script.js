@@ -7,9 +7,36 @@ toggle.addEventListener("click", () => {
 
 // RESUME MODAL
 const modal = document.getElementById("resumeModal");
-document.getElementById("openResume").onclick = () => modal.style.display = "block";
-document.querySelector(".close").onclick = () => modal.style.display = "none";
-window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
+const navbar = document.querySelector(".navbar");
+
+document.getElementById("openResume").onclick = () => {
+  modal.style.display = "block";
+  navbar.style.display = "none";
+  document.body.style.overflow = "hidden";
+};
+
+document.querySelector(".close").onclick = () => {
+  modal.style.display = "none";
+  navbar.style.display = "block";
+  document.body.style.overflow = "auto";
+};
+
+window.onclick = e => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    navbar.style.display = "block";
+    document.body.style.overflow = "auto";
+  }
+};
+
+// ESC KEY CLOSE
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && modal.style.display === "block") {
+    modal.style.display = "none";
+    navbar.style.display = "block";
+    document.body.style.overflow = "auto";
+  }
+});
 
 // SCROLL REVEAL
 const observer = new IntersectionObserver(entries => {
