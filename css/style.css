@@ -22,7 +22,9 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
-
+.navbar .logo {
+  color: #ffffff;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -237,3 +239,4 @@ body.dark .close {
     margin-top: 80px;
   }
 }
+
