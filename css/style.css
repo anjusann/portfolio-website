@@ -24,7 +24,10 @@ body {
 }
 .navbar .logo {
   color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -239,4 +242,5 @@ body.dark .close {
     margin-top: 80px;
   }
 }
+
 
