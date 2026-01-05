@@ -1,172 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anju Mathew | Software Engineer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anju Mathew | Software Engineer</title>
+    <!-- Updated CSS path -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Anju Mathew</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+        </nav>
+    </header>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container nav-flex">
-    <h1 class="logo">Anju Mathew</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <button id="themeToggle" class="theme-btn">🌙</button>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Software Engineer | Web & API Developer | Data-Driven Problem Solver</h1>
+            <p>Building scalable web applications and delivering actionable data insights to drive business success.</p>
+            <div class="hero-buttons">
+                <a href="assets/resume.pdf" class="btn">View Resume</a>
+                <a href="#projects" class="btn btn-primary">See My Projects</a>
+            </div>
+            <img src="assets/profile.jpg" alt="Anju Mathew" class="hero-image">
+        </div>
+    </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-flex container animate">
-    <div class="hero-text">
-      <h1>Anju Mathew</h1>
-      <h2>Software Engineer | PHP (Laravel)</h2>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Software Engineer with 5+ years of experience in full-stack web development, API integration, and data analytics. Proficient in PHP, Laravel, Symfony, JavaScript, Python, and MySQL. Skilled in designing and optimizing web applications, automating business processes, and generating actionable insights from data. Passionate about leveraging technology to solve real-world problems and deliver measurable results. Available for immediate joining on a spouse visa.</p>
+        <ul class="about-highlights">
+            <li>Full-Stack Web Development & API Integration</li>
+            <li>Database Design, Data Analytics & Automation</li>
+            <li>Python for Data Analysis & Google Data Analytics Tools</li>
+            <li>Cross-Functional Team Collaboration & Agile Methodology</li>
+        </ul>
+    </section>
 
-      <p class="hero-lead">
-        Software Engineer with <strong>5+ years of enterprise experience</strong>
-        developing, enhancing, and supporting production web applications.
-        Expertise in <strong>PHP (Laravel), JavaScript, and MySQL</strong>.
-      </p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <p>PHP, Python, JavaScript, SQL</p>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <p>Laravel, Symfony, jQuery</p>
+            </div>
+            <div class="skill-category">
+                <h3>Web & Design</h3>
+                <p>HTML5, CSS3, Bootstrap, Tailwind</p>
+            </div>
+            <div class="skill-category">
+                <h3>Database & Tools</h3>
+                <p>MySQL, Git, Postman, API Integration</p>
+            </div>
+            <div class="skill-category">
+                <h3>Data & Analytics</h3>
+                <p>Python (Pandas, NumPy), Google Data Analytics</p>
+            </div>
+            <div class="skill-category">
+                <h3>Other</h3>
+                <p>Problem Solving, Agile Methodologies, QA Testing</p>
+            </div>
+        </div>
+    </section>
 
-      <p class="hero-sub">
-        UAE • Immediate Joining • Onsite / Hybrid / Remote
-      </p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/project1.jpg" alt="E-Commerce Platform">
+                <h3>E-Commerce Platform</h3>
+                <p><strong>Technologies:</strong> PHP, Laravel, MySQL, JavaScript</p>
+                <p><strong>Contribution:</strong> Developed backend API, integrated payment gateway, optimized product search.</p>
+                <p><strong>Outcome:</strong> Reduced page load time by 30% and automated order management.</p>
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
 
-      <div class="hero-buttons">
-        <button class="btn btn-primary" id="openResume">View Resume</button>
-        <a href="#projects" class="btn btn-outline">View Projects</a>
-      </div>
-    </div>
+            <div class="project-card">
+                <img src="assets/project2.jpg" alt="Employee Attendance System">
+                <h3>Employee Attendance Automation</h3>
+                <p><strong>Technologies:</strong> PHP, Laravel, MySQL</p>
+                <p><strong>Contribution:</strong> Implemented attendance tracking and reporting automation.</p>
+                <p><strong>Outcome:</strong> Reduced manual processing time by 50% and improved reporting accuracy.</p>
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Live Demo</a>
+                </div>
+            </div>
 
-    <div class="hero-photo">
-      <img src="assets/images/profile.jpg" alt="Anju Mathew">
-    </div>
-  </div>
-</section>
+            <div class="project-card">
+                <img src="assets/project3.jpg" alt="Data Analytics Dashboard">
+                <h3>Data Analytics Dashboard</h3>
+                <p><strong>Technologies:</strong> Python, Pandas, Matplotlib, Excel</p>
+                <p><strong>Contribution:</strong> Cleaned datasets, visualized KPIs, and created interactive dashboards.</p>
+                <p><strong>Outcome:</strong> Helped management make data-driven decisions efficiently.</p>
+                <div class="project-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="section animate">
-  <div class="container">
-    <h2>Professional Summary</h2>
-    <p>
-      Software Engineer with over five years of experience across the full
-      software development lifecycle. Proven expertise in backend development,
-      frontend integration, database management, API integration, testing,
-      deployment support, and production issue resolution. Experienced in
-      collaborating with cross-functional teams to deliver secure, scalable,
-      and stable enterprise applications.
-    </p>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I’m currently available for full-time opportunities as a Software Engineer and open to remote or relocation roles.</p>
+        <ul class="contact-list">
+            <li>Email: <a href="mailto:anjumathew@example.com">anjumathew@example.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/anjumathew" target="_blank">linkedin.com/in/anjumathew</a></li>
+            <li>GitHub: <a href="https://github.com/anjusann" target="_blank">github.com/anjusann</a></li>
+            <li>Portfolio: <a href="https://anjusann.github.io/portfolio-website" target="_blank">https://anjusann.github.io/portfolio-website</a></li>
+        </ul>
+        <a href="assets/resume.pdf" class="btn btn-primary">Download Resume</a>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section light-bg animate">
-  <div class="container">
-    <h2>Technical Skills</h2>
+    <footer>
+        <p>&copy; 2026 Anju Mathew. All Rights Reserved.</p>
+    </footer>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Backend Development</h3>
-        <p>PHP (Core, Laravel), MVC, REST APIs, Secure Coding, Performance Optimization</p>
-      </div>
-
-      <div class="card">
-        <h3>Frontend Development</h3>
-        <p>JavaScript, HTML5, CSS3, jQuery, Responsive UI, DOM Manipulation</p>
-      </div>
-
-      <div class="card">
-        <h3>Database & Data</h3>
-        <p>MySQL, SQL Queries, Relational Databases, Data Validation</p>
-      </div>
-
-      <div class="card">
-        <h3>Testing & Quality</h3>
-        <p>Unit Testing, Functional Testing, Debugging, Bug Fixing</p>
-      </div>
-
-      <div class="card">
-        <h3>Tools & Process</h3>
-        <p>Git, GitHub, Jira, Agile/Scrum, CI/CD Fundamentals</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section animate">
-  <div class="container">
-    <h2>Enterprise Project Experience</h2>
-
-    <div class="card">
-      <h3>Geotechnical Monitoring System – Hong Kong</h3>
-      <p>
-        Enterprise real-time monitoring platform used in large infrastructure
-        projects. Contributed to backend development, frontend enhancements,
-        dashboard optimization, and production support.
-      </p>
-      <p><strong>Tech:</strong> PHP, Laravel, MySQL, JavaScript</p>
-    </div>
-
-    <div class="card">
-      <h3>HS2 Railway Project – UK</h3>
-      <p>
-        Supported system upgrades, testing, deployment, and live production
-        issue resolution ensuring data accuracy and stability.
-      </p>
-      <p><strong>Tech:</strong> PHP, MySQL</p>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section light-bg animate">
-  <div class="container">
-    <h2>Certifications</h2>
-    <ul class="cert-list">
-      <li>1 Million Prompters – Dubai Future Foundation</li>
-      <li>Agile Software Development – LinkedIn Learning</li>
-      <li>DevOps Professional Certificate (Foundational)</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section animate">
-  <div class="container contact-box">
-    <h2>Contact Me</h2>
-    <p>
-      I’m open to Software Engineer roles in UAE and remote opportunities.
-      Let’s connect.
-    </p>
-
-    <div class="contact-details">
-      <p><strong>Email:</strong> anjumathew@example.com</p>
-      <p><strong>GitHub:</strong> github.com/anjusann</p>
-      <p><strong>LinkedIn:</strong> linkedin.com/in/anjumathew</p>
-    </div>
-  </div>
-</section>
-
-<!-- RESUME MODAL -->
-<div id="resumeModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe src="Anju_Mathew_Software_Engineer.pdf"></iframe>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <!-- Updated JS path -->
+    <script src="js/script.js"></script>
 </body>
 </html>
