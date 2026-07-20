@@ -6,7 +6,6 @@
 <title>Anju Mathew | PHP (Laravel) Developer — Dubai, UAE</title>
 <meta name="description" content="Anju Mathew — PHP (Laravel) Developer with 5+ years building and maintaining production web applications. Based in Dubai, UAE. Available immediately.">
 
-<!-- Open Graph (link previews when shared with recruiters) -->
 <meta property="og:title" content="Anju Mathew | PHP (Laravel) Developer">
 <meta property="og:description" content="5+ years building and maintaining production PHP/Laravel web applications. Based in Dubai, UAE — available immediately.">
 <meta property="og:image" content="assets/images/profile.jpg">
@@ -15,7 +14,7 @@
 <link rel="icon" href="assets/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,24 +22,21 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container nav-flex">
-    <a href="#" class="logo">Anju Mathew</a>
+<!-- TAB BAR NAV -->
+<nav class="tabbar">
+  <div class="tabbar-inner">
+    <a href="#" class="brand">~/anju-mathew</a>
 
-    <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="tabs" id="tabs">
+      <a class="tab" href="#about" data-section="about"><span class="tab-dot" style="--dot:#8b7cf6"></span>about.php</a>
+      <a class="tab" href="#experience" data-section="experience"><span class="tab-dot" style="--dot:#46d9b8"></span>experience.json</a>
+      <a class="tab" href="#skills" data-section="skills"><span class="tab-dot" style="--dot:#f5b942"></span>skills.js</a>
+      <a class="tab" href="#projects" data-section="projects"><span class="tab-dot" style="--dot:#5ea1f2"></span>projects.php</a>
+      <a class="tab" href="#certifications" data-section="certifications"><span class="tab-dot" style="--dot:#f2789f"></span>certs.md</a>
+      <a class="tab" href="#contact" data-section="contact"><span class="tab-dot" style="--dot:#46d9b8"></span>contact.html</a>
+    </div>
 
-    <ul id="navList">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
-    </ul>
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle light/dark theme">🌙</button>
   </div>
 </nav>
 
@@ -48,9 +44,9 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-flex container animate">
+  <div class="container hero-flex animate">
     <div class="hero-text">
-      <p class="eyebrow">Dubai, UAE · Available immediately</p>
+      <p class="comment">// available for hire — dubai, uae</p>
       <h1>Anju Mathew</h1>
       <h2>PHP (Laravel) Developer</h2>
 
@@ -58,21 +54,39 @@
         <strong>5+ years</strong> building, enhancing, and supporting production web
         applications — from enterprise monitoring dashboards to client-facing
         business sites. Core strengths in <strong>PHP (Core &amp; Laravel), WordPress,
-        MySQL, and JavaScript</strong>, plus hands-on experience managing hosting and
+        MySQL, and JavaScript</strong>, with hands-on experience managing hosting and
         deployment end to end.
       </p>
-
-      <p class="hero-sub">Open to Software Engineer / PHP Developer roles — Onsite, Hybrid, or Remote</p>
 
       <div class="hero-buttons">
         <a class="btn btn-primary" href="assets/resume/Anju_Mathew_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
         <a class="btn btn-outline" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download CV</a>
-        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch →</a>
       </div>
     </div>
 
-    <div class="hero-photo">
-      <img src="assets/images/profile.jpg" alt="Portrait of Anju Mathew">
+    <div class="hero-side">
+      <div class="winframe photo-frame">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="wtitle">profile.jpg</span>
+        </div>
+        <img src="assets/images/profile.jpg" alt="Portrait of Anju Mathew">
+      </div>
+
+      <div class="winframe terminal">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="wtitle">zsh — anju@portfolio</span>
+        </div>
+        <div class="term-body">
+          <p><span class="prompt">$</span> php artisan whoami</p>
+          <p class="out">Anju Mathew — PHP (Laravel) Developer</p>
+          <p><span class="prompt">$</span> php artisan status</p>
+          <p class="out">5+ yrs experience · Open to Onsite / Hybrid / Remote</p>
+          <p class="prompt-line"><span class="prompt">$</span> <span class="cursor-blink">▌</span></p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -80,8 +94,13 @@
 <!-- ABOUT -->
 <section id="about" class="section animate">
   <div class="container">
-    <p class="eyebrow">About</p>
-    <h2>Professional Summary</h2>
+    <div class="section-head">
+      <span class="line-no">01</span>
+      <div>
+        <p class="comment">// about</p>
+        <h2>Professional Summary</h2>
+      </div>
+    </div>
     <p class="lead-text">
       PHP Developer with over five years of experience across the full software
       development lifecycle — design, development, testing, deployment, and
@@ -96,20 +115,25 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section light-bg animate">
+<section id="experience" class="section alt-bg animate">
   <div class="container">
-    <p class="eyebrow">Career</p>
-    <h2>Work Experience</h2>
+    <div class="section-head">
+      <span class="line-no">02</span>
+      <div>
+        <p class="comment">// career log</p>
+        <h2>Work Experience</h2>
+      </div>
+    </div>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-head">
+    <div class="changelog">
+      <div class="log-entry">
+        <div class="log-rail"><span class="log-dot current"></span></div>
+        <div class="log-card">
+          <div class="log-head">
             <h3>Web Developer</h3>
-            <span class="timeline-date">Jun 2026 – Present</span>
+            <span class="log-date">Jun 2026 – Present</span>
           </div>
-          <p class="timeline-org">Volga Tigris Digital Marketing Agency · Dubai, UAE</p>
+          <p class="log-org">Volga Tigris Digital Marketing Agency · Dubai, UAE</p>
           <ul>
             <li>Manage and maintain 10+ client websites concurrently on WordPress, Core PHP, and Laravel (Botble CMS).</li>
             <li>Built a fully custom Laravel/Botble homepage using Eloquent models, Blade templating, and a reusable design system.</li>
@@ -119,14 +143,14 @@
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-head">
+      <div class="log-entry">
+        <div class="log-rail"><span class="log-dot"></span></div>
+        <div class="log-card">
+          <div class="log-head">
             <h3>Software Engineer</h3>
-            <span class="timeline-date">Jul 2021 – Jan 2025</span>
+            <span class="log-date">Jul 2021 – Jan 2025</span>
           </div>
-          <p class="timeline-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
+          <p class="log-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
           <ul>
             <li>Built and maintained full-stack Laravel applications (Eloquent ORM, Blade, migrations, RESTful APIs) for live geotechnical and rail-monitoring dashboards.</li>
             <li>Refactored legacy PHP into cleaner, MVC-aligned Laravel code, easing maintenance and onboarding.</li>
@@ -136,14 +160,14 @@
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="timeline-head">
+      <div class="log-entry">
+        <div class="log-rail"><span class="log-dot"></span></div>
+        <div class="log-card">
+          <div class="log-head">
             <h3>Junior PHP Programmer</h3>
-            <span class="timeline-date">Jul 2019 – Jun 2021</span>
+            <span class="log-date">Jul 2019 – Jun 2021</span>
           </div>
-          <p class="timeline-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
+          <p class="log-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
           <ul>
             <li>Contributed core PHP features to production monitoring applications, including the HS2 Railway (UK) platform.</li>
             <li>Provided real-time application support and cross-browser testing for live client systems.</li>
@@ -158,47 +182,45 @@
 <!-- SKILLS -->
 <section id="skills" class="section animate">
   <div class="container">
-    <p class="eyebrow">Toolkit</p>
-    <h2>Technical Skills</h2>
+    <div class="section-head">
+      <span class="line-no">03</span>
+      <div>
+        <p class="comment">// toolkit</p>
+        <h2>Technical Skills</h2>
+      </div>
+    </div>
 
     <div class="grid">
       <div class="card">
-        <h3>Backend Development</h3>
+        <h3><span class="tok-fn">function</span> backend()</h3>
         <p>PHP (Core, Laravel), MVC Architecture, RESTful APIs, Secure Coding, Code Refactoring</p>
       </div>
-
       <div class="card">
-        <h3>Laravel Ecosystem</h3>
+        <h3><span class="tok-fn">function</span> laravel()</h3>
         <p>Eloquent ORM, Blade Templating, Artisan CLI, Migrations &amp; Seeders, Routing &amp; Middleware, Composer</p>
       </div>
-
       <div class="card">
-        <h3>CMS &amp; Frontend</h3>
+        <h3><span class="tok-fn">function</span> frontend()</h3>
         <p>WordPress, Botble CMS, JavaScript, HTML5, CSS3, jQuery, Responsive UI</p>
       </div>
-
       <div class="card">
-        <h3>Database &amp; Data</h3>
+        <h3><span class="tok-fn">function</span> database()</h3>
         <p>MySQL, SQL Query Optimization, Relational Database Design, Data Validation</p>
       </div>
-
       <div class="card">
-        <h3>Hosting &amp; Deployment</h3>
+        <h3><span class="tok-fn">function</span> deploy()</h3>
         <p>Hostinger, GoDaddy, Bluehost, Combell, Domain &amp; DNS Configuration, Site Deployment</p>
       </div>
-
       <div class="card">
-        <h3>AI-Assisted Development</h3>
+        <h3><span class="tok-fn">function</span> aiTools()</h3>
         <p>Claude AI, ChatGPT, GitHub Copilot, Prompt Engineering</p>
       </div>
-
       <div class="card">
-        <h3>Testing &amp; Quality</h3>
+        <h3><span class="tok-fn">function</span> test()</h3>
         <p>Unit Testing, Functional Testing, Debugging, Bug Fixing</p>
       </div>
-
       <div class="card">
-        <h3>Tools &amp; Process</h3>
+        <h3><span class="tok-fn">function</span> workflow()</h3>
         <p>Git, GitHub, Jira, Agile/Scrum, Docker</p>
       </div>
     </div>
@@ -206,52 +228,87 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section light-bg animate">
+<section id="projects" class="section alt-bg animate">
   <div class="container">
-    <p class="eyebrow">Selected Work</p>
-    <h2>Project Experience</h2>
+    <div class="section-head">
+      <span class="line-no">04</span>
+      <div>
+        <p class="comment">// selected work</p>
+        <h2>Project Experience</h2>
+      </div>
+    </div>
 
     <div class="grid">
-      <div class="card project-card">
-        <h3>Blossom Valley Child Development Centre</h3>
-        <p class="project-meta">Client site · blossomvalleytherapycentre.com</p>
-        <p>Migrated the site from WordPress to a custom PHP build. Rebuilt 15+ service pages and the Partner With Us (CSR) page, and cut gallery page load time from roughly 49s to roughly 9s through image optimization.</p>
-        <p class="tech-tags"><span>PHP</span><span>MySQL</span><span>SEO</span></p>
+      <div class="winframe project-window">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="url-bar">blossomvalleytherapycentre.com</span>
+        </div>
+        <div class="project-body">
+          <h3>Blossom Valley Child Development Centre</h3>
+          <p>Migrated the site from WordPress to a custom PHP build. Rebuilt 15+ service pages and the Partner With Us (CSR) page, and cut gallery page load time from roughly 49s to roughly 9s through image optimization.</p>
+          <p class="tech-tags"><span>PHP</span><span>MySQL</span><span>SEO</span></p>
+        </div>
       </div>
 
-      <div class="card project-card">
-        <h3>Volga Tigris Corporate Website</h3>
-        <p class="project-meta">Agency site · volgatigris.com</p>
-        <p>Built a fully custom homepage on Laravel using Eloquent and Blade, including a reusable design system, enquiry form, and a persistent floating contact widget.</p>
-        <p class="tech-tags"><span>Laravel</span><span>Botble CMS</span><span>JavaScript</span></p>
+      <div class="winframe project-window">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="url-bar">volgatigris.com</span>
+        </div>
+        <div class="project-body">
+          <h3>Volga Tigris Corporate Website</h3>
+          <p>Built a fully custom homepage on Laravel using Eloquent and Blade, including a reusable design system, enquiry form, and a persistent floating contact widget.</p>
+          <p class="tech-tags"><span>Laravel</span><span>Botble CMS</span><span>JavaScript</span></p>
+        </div>
       </div>
 
-      <div class="card project-card">
-        <h3>Aurifier Tax — WordPress to Laravel</h3>
-        <p class="project-meta">Migration project</p>
-        <p>Converted an existing WordPress website into a custom Laravel application, restructuring pages and preserving SEO value and URLs.</p>
-        <p class="tech-tags"><span>Laravel</span><span>Eloquent</span><span>MVC</span></p>
+      <div class="winframe project-window">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="url-bar">aurifiertax.com</span>
+        </div>
+        <div class="project-body">
+          <h3>Aurifier Tax — WordPress to Laravel</h3>
+          <p>Converted an existing WordPress website into a custom Laravel application, restructuring pages and preserving SEO value and URLs.</p>
+          <p class="tech-tags"><span>Laravel</span><span>Eloquent</span><span>MVC</span></p>
+        </div>
       </div>
 
-      <div class="card project-card">
-        <h3>Ampsy Consultancy Website</h3>
-        <p class="project-meta">Client site</p>
-        <p>Designed and built the company website from the ground up, including information architecture and a responsive layout, taking the client from no web presence to a live site.</p>
-        <p class="tech-tags"><span>PHP</span><span>Responsive UI</span></p>
+      <div class="winframe project-window">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="url-bar">ampsyconsultancy.com</span>
+        </div>
+        <div class="project-body">
+          <h3>Ampsy Consultancy Website</h3>
+          <p>Designed and built the company website from the ground up, including information architecture and a responsive layout, taking the client from no web presence to a live site.</p>
+          <p class="tech-tags"><span>PHP</span><span>Responsive UI</span></p>
+        </div>
       </div>
 
-      <div class="card project-card">
-        <h3>Geotechnical Monitoring System</h3>
-        <p class="project-meta">Enterprise · Lantau, Hong Kong</p>
-        <p>Real-time monitoring platform for large-scale infrastructure. Contributed backend development, dashboard optimization, and production support.</p>
-        <p class="tech-tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></p>
+      <div class="winframe project-window">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="url-bar">lantau-lpp.monitoring/dashboard</span>
+        </div>
+        <div class="project-body">
+          <h3>Geotechnical Monitoring System</h3>
+          <p>Real-time monitoring platform for large-scale infrastructure in Hong Kong. Contributed backend development, dashboard optimization, and production support.</p>
+          <p class="tech-tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></p>
+        </div>
       </div>
 
-      <div class="card project-card">
-        <h3>HS2 Railway Project</h3>
-        <p class="project-meta">Enterprise · UK</p>
-        <p>Supported system upgrades, testing, deployment, and live production issue resolution, ensuring data accuracy and stability.</p>
-        <p class="tech-tags"><span>PHP</span><span>MySQL</span></p>
+      <div class="winframe project-window">
+        <div class="winbar">
+          <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+          <span class="url-bar">hs2-railway.internal/reports</span>
+        </div>
+        <div class="project-body">
+          <h3>HS2 Railway Project</h3>
+          <p>Supported system upgrades, testing, deployment, and live production issue resolution for the UK's HS2 rail programme, ensuring data accuracy and stability.</p>
+          <p class="tech-tags"><span>PHP</span><span>MySQL</span></p>
+        </div>
       </div>
     </div>
   </div>
@@ -260,43 +317,62 @@
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="section animate">
   <div class="container">
-    <p class="eyebrow">Continuous Learning</p>
-    <h2>Certifications</h2>
+    <div class="section-head">
+      <span class="line-no">05</span>
+      <div>
+        <p class="comment">// continuous learning</p>
+        <h2>Certifications</h2>
+      </div>
+    </div>
     <ul class="cert-list">
-      <li>1 Million Prompters — Dubai Future Foundation &amp; Dubai Centre for Artificial Intelligence</li>
-      <li>Google Data Analytics Professional Certificate</li>
-      <li>Agile Software Development — LinkedIn Learning</li>
-      <li>DevOps Professional Certificate (Foundational)</li>
+      <li><span class="tok-fn">✓</span> 1 Million Prompters — Dubai Future Foundation &amp; Dubai Centre for Artificial Intelligence</li>
+      <li><span class="tok-fn">✓</span> Google Data Analytics Professional Certificate</li>
+      <li><span class="tok-fn">✓</span> Agile Software Development — LinkedIn Learning</li>
+      <li><span class="tok-fn">✓</span> DevOps Professional Certificate (Foundational)</li>
     </ul>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section light-bg animate">
-  <div class="container contact-box">
-    <p class="eyebrow">Let's Talk</p>
-    <h2>Connect With Me</h2>
-    <p class="lead-text">
-      Open to PHP / Laravel Developer and Software Engineer roles in the UAE
-      and remote. Reach out any time — I usually reply within a day.
-    </p>
+<section id="contact" class="section alt-bg animate">
+  <div class="container">
+    <div class="winframe contact-window">
+      <div class="winbar">
+        <span class="wdot red"></span><span class="wdot yellow"></span><span class="wdot green"></span>
+        <span class="wtitle">contact.html</span>
+      </div>
+      <div class="contact-body">
+        <p class="comment">// let's talk</p>
+        <h2>Connect With Me</h2>
+        <p class="lead-text">
+          Open to PHP / Laravel Developer and Software Engineer roles in the UAE
+          and remote. Reach out any time — I usually reply within a day.
+        </p>
 
-    <div class="contact-details">
-      <p><a href="mailto:anjusannalex@gmail.com">anjusannalex@gmail.com</a></p>
-      <p><a href="tel:+971564238408">+971 56 423 8408</a></p>
-      <p><a href="https://github.com/anjusann" target="_blank" rel="noopener">github.com/anjusann</a></p>
-      <p><a href="https://www.linkedin.com/in/anju-m0511" target="_blank" rel="noopener">linkedin.com/in/anju-m0511</a></p>
+        <div class="contact-details">
+          <p><span class="tok-key">email</span> <a href="mailto:anjusannalex@gmail.com">anjusannalex@gmail.com</a></p>
+          <p><span class="tok-key">phone</span> <a href="tel:+971564238408">+971 56 423 8408</a></p>
+          <p><span class="tok-key">github</span> <a href="https://github.com/anjusann" target="_blank" rel="noopener">github.com/anjusann</a></p>
+          <p><span class="tok-key">linkedin</span> <a href="https://www.linkedin.com/in/anju-m0511" target="_blank" rel="noopener">linkedin.com/in/anju-m0511</a></p>
+        </div>
+
+        <a class="btn btn-primary" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download Resume</a>
+      </div>
     </div>
-
-    <a class="btn btn-primary" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download Resume</a>
   </div>
 </section>
 
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <p>&copy; <span id="year"></span> Anju Mathew. Built with HTML, CSS &amp; JavaScript.</p>
+<!-- STATUS BAR FOOTER -->
+<footer class="statusbar">
+  <div class="statusbar-inner">
+    <span class="sb-item sb-branch">⎇ main</span>
+    <span class="sb-item">UTF-8</span>
+    <span class="sb-item">PHP</span>
+    <span class="sb-item sb-status">● Available for hire</span>
+    <span class="sb-spacer"></span>
+    <span class="sb-item">&copy; <span id="year"></span> Anju Mathew</span>
   </div>
 </footer>
 
