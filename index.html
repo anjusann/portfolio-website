@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anju Mathew | Software Engineer</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anju Mathew | PHP (Laravel) Developer — Dubai, UAE</title>
+<meta name="description" content="Anju Mathew — PHP (Laravel) Developer with 5+ years building and maintaining production web applications. Based in Dubai, UAE. Available immediately.">
+
+<!-- Open Graph (link previews when shared with recruiters) -->
+<meta property="og:title" content="Anju Mathew | PHP (Laravel) Developer">
+<meta property="og:description" content="5+ years building and maintaining production PHP/Laravel web applications. Based in Dubai, UAE — available immediately.">
+<meta property="og:image" content="assets/images/profile.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="container nav-flex">
-    <h1 class="logo">Anju Mathew</h1>
-    <ul>
+    <a href="#" class="logo">Anju Mathew</a>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul id="navList">
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li>
-        <button id="themeToggle" class="theme-btn">🌙</button>
-      </li>
+      <li><button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
     </ul>
   </div>
 </nav>
+
+<main id="main">
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-flex container animate">
     <div class="hero-text">
+      <p class="eyebrow">Dubai, UAE · Available immediately</p>
       <h1>Anju Mathew</h1>
-      <h2>Software Engineer | PHP (Laravel)</h2>
+      <h2>PHP (Laravel) Developer</h2>
 
       <p class="hero-lead">
-        Software Engineer with <strong>5+ years of enterprise experience</strong>
-        developing, enhancing, and supporting production web applications.
-        Expertise in <strong>PHP (Laravel), JavaScript, and MySQL</strong>.
+        <strong>5+ years</strong> building, enhancing, and supporting production web
+        applications — from enterprise monitoring dashboards to client-facing
+        business sites. Core strengths in <strong>PHP (Core &amp; Laravel), WordPress,
+        MySQL, and JavaScript</strong>, plus hands-on experience managing hosting and
+        deployment end to end.
       </p>
 
-      <p class="hero-sub">
-        UAE • Immediate Joining • Onsite / Hybrid / Remote
-      </p>
+      <p class="hero-sub">Open to Software Engineer / PHP Developer roles — Onsite, Hybrid, or Remote</p>
 
       <div class="hero-buttons">
-        <button class="btn btn-primary" id="openResume">View Resume</button>
-        <a href="#projects" class="btn btn-outline">View Projects</a>
+        <a class="btn btn-primary" href="assets/resume/Anju_Mathew_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        <a class="btn btn-outline" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download CV</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
       </div>
     </div>
 
     <div class="hero-photo">
-      <img src="assets/images/profile.jpg" alt="Anju Mathew">
+      <img src="assets/images/profile.jpg" alt="Portrait of Anju Mathew">
     </div>
   </div>
 </section>
@@ -58,120 +80,226 @@
 <!-- ABOUT -->
 <section id="about" class="section animate">
   <div class="container">
+    <p class="eyebrow">About</p>
     <h2>Professional Summary</h2>
-    <p>
-      Software Engineer with over five years of experience across the full
-      software development lifecycle. Proven expertise in backend development,
-      frontend integration, database management, API integration, testing,
-      deployment support, and production issue resolution. Experienced in
-      collaborating with cross-functional teams to deliver secure, scalable,
-      and stable enterprise applications.
+    <p class="lead-text">
+      PHP Developer with over five years of experience across the full software
+      development lifecycle — design, development, testing, deployment, and
+      production support — in Agile environments. Experience spans enterprise
+      monitoring platforms for infrastructure projects in Hong Kong and the UK,
+      and, more recently, full-cycle development and hosting management for
+      client websites at a Dubai digital marketing agency. Comfortable owning a
+      project end to end: backend logic, frontend implementation, database
+      design, SEO-friendly content, and the server it all runs on.
     </p>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section light-bg animate">
+<!-- EXPERIENCE -->
+<section id="experience" class="section light-bg animate">
   <div class="container">
+    <p class="eyebrow">Career</p>
+    <h2>Work Experience</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Web Developer</h3>
+            <span class="timeline-date">Jun 2026 – Present</span>
+          </div>
+          <p class="timeline-org">Volga Tigris Digital Marketing Agency · Dubai, UAE</p>
+          <ul>
+            <li>Manage and maintain 10+ client websites concurrently on WordPress, Core PHP, and Laravel (Botble CMS).</li>
+            <li>Built a fully custom Laravel/Botble homepage using Eloquent models, Blade templating, and a reusable design system.</li>
+            <li>Handle hosting and deployment across Hostinger, GoDaddy, Bluehost, and Combell, including DNS and domain configuration.</li>
+            <li>Use Claude AI and ChatGPT for prompt-assisted development, debugging, and content workflows.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Engineer</h3>
+            <span class="timeline-date">Jul 2021 – Jan 2025</span>
+          </div>
+          <p class="timeline-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
+          <ul>
+            <li>Built and maintained full-stack Laravel applications (Eloquent ORM, Blade, migrations, RESTful APIs) for live geotechnical and rail-monitoring dashboards.</li>
+            <li>Refactored legacy PHP into cleaner, MVC-aligned Laravel code, easing maintenance and onboarding.</li>
+            <li>Led code reviews and mentored junior developers on Laravel conventions and Git-based workflows.</li>
+            <li>Rebuilt dashboard and reporting UI components, cutting page load times by up to 40%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Junior PHP Programmer</h3>
+            <span class="timeline-date">Jul 2019 – Jun 2021</span>
+          </div>
+          <p class="timeline-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
+          <ul>
+            <li>Contributed core PHP features to production monitoring applications, including the HS2 Railway (UK) platform.</li>
+            <li>Provided real-time application support and cross-browser testing for live client systems.</li>
+            <li>Supported deployment and maintained system documentation for development and QA teams.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section animate">
+  <div class="container">
+    <p class="eyebrow">Toolkit</p>
     <h2>Technical Skills</h2>
 
     <div class="grid">
       <div class="card">
         <h3>Backend Development</h3>
-        <p>PHP (Core, Laravel), MVC, REST APIs, Secure Coding, Performance Optimization</p>
+        <p>PHP (Core, Laravel), MVC Architecture, RESTful APIs, Secure Coding, Code Refactoring</p>
       </div>
 
       <div class="card">
-        <h3>Frontend Development</h3>
-        <p>JavaScript, HTML5, CSS3, jQuery, Responsive UI, DOM Manipulation</p>
+        <h3>Laravel Ecosystem</h3>
+        <p>Eloquent ORM, Blade Templating, Artisan CLI, Migrations &amp; Seeders, Routing &amp; Middleware, Composer</p>
       </div>
 
       <div class="card">
-        <h3>Database & Data</h3>
-        <p>MySQL, SQL Queries, Relational Databases, Data Validation</p>
+        <h3>CMS &amp; Frontend</h3>
+        <p>WordPress, Botble CMS, JavaScript, HTML5, CSS3, jQuery, Responsive UI</p>
       </div>
 
       <div class="card">
-        <h3>Testing & Quality</h3>
+        <h3>Database &amp; Data</h3>
+        <p>MySQL, SQL Query Optimization, Relational Database Design, Data Validation</p>
+      </div>
+
+      <div class="card">
+        <h3>Hosting &amp; Deployment</h3>
+        <p>Hostinger, GoDaddy, Bluehost, Combell, Domain &amp; DNS Configuration, Site Deployment</p>
+      </div>
+
+      <div class="card">
+        <h3>AI-Assisted Development</h3>
+        <p>Claude AI, ChatGPT, GitHub Copilot, Prompt Engineering</p>
+      </div>
+
+      <div class="card">
+        <h3>Testing &amp; Quality</h3>
         <p>Unit Testing, Functional Testing, Debugging, Bug Fixing</p>
       </div>
 
       <div class="card">
-        <h3>Tools & Process</h3>
-        <p>Git, GitHub, Jira, Agile/Scrum, CI/CD Fundamentals</p>
+        <h3>Tools &amp; Process</h3>
+        <p>Git, GitHub, Jira, Agile/Scrum, Docker</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section animate">
+<section id="projects" class="section light-bg animate">
   <div class="container">
-    <h2>Enterprise Project Experience</h2>
+    <p class="eyebrow">Selected Work</p>
+    <h2>Project Experience</h2>
 
-    <div class="card">
-      <h3>Geotechnical Monitoring System – Hong Kong</h3>
-      <p>
-        Enterprise real-time monitoring platform used in large infrastructure
-        projects. Contributed to backend development, frontend enhancements,
-        dashboard optimization, and production support.
-      </p>
-      <p><strong>Tech:</strong> PHP, Laravel, MySQL, JavaScript</p>
-    </div>
+    <div class="grid">
+      <div class="card project-card">
+        <h3>Blossom Valley Child Development Centre</h3>
+        <p class="project-meta">Client site · blossomvalleytherapycentre.com</p>
+        <p>Migrated the site from WordPress to a custom PHP build. Rebuilt 15+ service pages and the Partner With Us (CSR) page, and cut gallery page load time from roughly 49s to roughly 9s through image optimization.</p>
+        <p class="tech-tags"><span>PHP</span><span>MySQL</span><span>SEO</span></p>
+      </div>
 
-    <div class="card">
-      <h3>HS2 Railway Project – UK</h3>
-      <p>
-        Supported system upgrades, testing, deployment, and live production
-        issue resolution ensuring data accuracy and stability.
-      </p>
-      <p><strong>Tech:</strong> PHP, MySQL</p>
+      <div class="card project-card">
+        <h3>Volga Tigris Corporate Website</h3>
+        <p class="project-meta">Agency site · volgatigris.com</p>
+        <p>Built a fully custom homepage on Laravel using Eloquent and Blade, including a reusable design system, enquiry form, and a persistent floating contact widget.</p>
+        <p class="tech-tags"><span>Laravel</span><span>Botble CMS</span><span>JavaScript</span></p>
+      </div>
+
+      <div class="card project-card">
+        <h3>Aurifier Tax — WordPress to Laravel</h3>
+        <p class="project-meta">Migration project</p>
+        <p>Converted an existing WordPress website into a custom Laravel application, restructuring pages and preserving SEO value and URLs.</p>
+        <p class="tech-tags"><span>Laravel</span><span>Eloquent</span><span>MVC</span></p>
+      </div>
+
+      <div class="card project-card">
+        <h3>Ampsy Consultancy Website</h3>
+        <p class="project-meta">Client site</p>
+        <p>Designed and built the company website from the ground up, including information architecture and a responsive layout, taking the client from no web presence to a live site.</p>
+        <p class="tech-tags"><span>PHP</span><span>Responsive UI</span></p>
+      </div>
+
+      <div class="card project-card">
+        <h3>Geotechnical Monitoring System</h3>
+        <p class="project-meta">Enterprise · Lantau, Hong Kong</p>
+        <p>Real-time monitoring platform for large-scale infrastructure. Contributed backend development, dashboard optimization, and production support.</p>
+        <p class="tech-tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></p>
+      </div>
+
+      <div class="card project-card">
+        <h3>HS2 Railway Project</h3>
+        <p class="project-meta">Enterprise · UK</p>
+        <p>Supported system upgrades, testing, deployment, and live production issue resolution, ensuring data accuracy and stability.</p>
+        <p class="tech-tags"><span>PHP</span><span>MySQL</span></p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CERTIFICATIONS -->
-<section id="certifications" class="section light-bg animate">
+<section id="certifications" class="section animate">
   <div class="container">
+    <p class="eyebrow">Continuous Learning</p>
     <h2>Certifications</h2>
     <ul class="cert-list">
-      <li>1 Million Prompters – Dubai Future Foundation</li>
-      <li>Agile Software Development – LinkedIn Learning</li>
+      <li>1 Million Prompters — Dubai Future Foundation &amp; Dubai Centre for Artificial Intelligence</li>
+      <li>Google Data Analytics Professional Certificate</li>
+      <li>Agile Software Development — LinkedIn Learning</li>
       <li>DevOps Professional Certificate (Foundational)</li>
     </ul>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section animate">
+<section id="contact" class="section light-bg animate">
   <div class="container contact-box">
+    <p class="eyebrow">Let's Talk</p>
     <h2>Connect With Me</h2>
-    <p>
-      I’m open to Software Engineer roles in UAE and remote opportunities.
-      Let’s connect.
+    <p class="lead-text">
+      Open to PHP / Laravel Developer and Software Engineer roles in the UAE
+      and remote. Reach out any time — I usually reply within a day.
     </p>
 
     <div class="contact-details">
-      <p><strong>Email:</strong> anjumathew@example.com</p>
-      <p><strong>Phone:+971 56 423 8408<p></p></strong>
-      <p><strong>GitHub:</strong> github.com/anjusann</p>
-      <p><strong>LinkedIn:</strong> www.linkedin.com/in/anju-m0511</p>
+      <p><a href="mailto:anjusannalex@gmail.com">anjusannalex@gmail.com</a></p>
+      <p><a href="tel:+971564238408">+971 56 423 8408</a></p>
+      <p><a href="https://github.com/anjusann" target="_blank" rel="noopener">github.com/anjusann</a></p>
+      <p><a href="https://www.linkedin.com/in/anju-m0511" target="_blank" rel="noopener">linkedin.com/in/anju-m0511</a></p>
     </div>
+
+    <a class="btn btn-primary" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download Resume</a>
   </div>
 </section>
 
-<!-- RESUME MODAL -->
-<div id="resumeModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-     <iframe src="assets/resume/Anju_Mathew_Software_Engineer.pdf"></iframe>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Anju Mathew. Built with HTML, CSS &amp; JavaScript.</p>
   </div>
-</div>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
-
