@@ -1,41 +1,33 @@
+// FOOTER YEAR
+document.getElementById("year").textContent = new Date().getFullYear();
+
 // DARK MODE
 const toggle = document.getElementById("themeToggle");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+if (prefersDark) {
+  document.body.classList.add("dark");
+  toggle.textContent = "☀️";
+}
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 
-// RESUME MODAL
-const modal = document.getElementById("resumeModal");
-const navbar = document.querySelector(".navbar");
+// MOBILE NAV TOGGLE
+const navToggle = document.getElementById("navToggle");
+const navList = document.getElementById("navList");
 
-document.getElementById("openResume").onclick = () => {
-  modal.style.display = "block";
-  navbar.style.display = "none";
-  document.body.style.overflow = "hidden";
-};
+navToggle.addEventListener("click", () => {
+  const isOpen = navList.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+});
 
-document.querySelector(".close").onclick = () => {
-  modal.style.display = "none";
-  navbar.style.display = "block";
-  document.body.style.overflow = "auto";
-};
-
-window.onclick = e => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-    navbar.style.display = "block";
-    document.body.style.overflow = "auto";
-  }
-};
-
-// ESC KEY CLOSE
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape" && modal.style.display === "block") {
-    modal.style.display = "none";
-    navbar.style.display = "block";
-    document.body.style.overflow = "auto";
-  }
+// Close mobile nav after choosing a link
+navList.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navList.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  });
 });
 
 // SCROLL REVEAL
