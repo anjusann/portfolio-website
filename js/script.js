@@ -4,48 +4,21 @@ try {
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 } catch (e) { console.error(e); }
 
-// THEME TOGGLE (dark editor theme is default; light is the alternate)
+// MOBILE NAV TOGGLE
 try {
-  const toggle = document.getElementById("themeToggle");
-  if (toggle) {
-    const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-    if (prefersLight) {
-      document.body.classList.add("light");
-      toggle.textContent = "☀️";
-    }
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("light");
-      toggle.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
+  const navToggle = document.getElementById("navToggle");
+  const navList = document.getElementById("navList");
+  if (navToggle && navList) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = navList.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
-  }
-} catch (e) { console.error(e); }
-
-// ACTIVE TAB HIGHLIGHT (mirrors the section currently in view)
-try {
-  const tabs = Array.from(document.querySelectorAll(".tab"));
-  const sections = tabs
-    .map(tab => document.getElementById(tab.dataset.section))
-    .filter(Boolean);
-
-  if (tabs.length && sections.length && "IntersectionObserver" in window) {
-    const setActive = id => {
-      tabs.forEach(tab => {
-        const isActive = tab.dataset.section === id;
-        tab.classList.toggle("active", isActive);
-        if (isActive) {
-          const dotColor = getComputedStyle(tab.querySelector(".tab-dot")).getPropertyValue("--dot");
-          tab.style.setProperty("--dot", dotColor);
-        }
+    navList.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navList.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
       });
-    };
-
-    const sectionObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) setActive(entry.target.id);
-      });
-    }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
-
-    sections.forEach(sec => sectionObserver.observe(sec));
+    });
   }
 } catch (e) { console.error(e); }
 
@@ -54,7 +27,7 @@ try {
 try {
   if ("IntersectionObserver" in window) {
     const targets = document.querySelectorAll(".animate");
-    const revealObserver = new IntersectionObserver(entries => {
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add("show");
       });
@@ -62,7 +35,7 @@ try {
 
     targets.forEach(el => {
       el.classList.add("will-animate");
-      revealObserver.observe(el);
+      observer.observe(el);
     });
   }
 } catch (e) { console.error(e); }
