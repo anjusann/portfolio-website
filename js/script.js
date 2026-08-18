@@ -160,6 +160,22 @@
     }
   }
 
+  /* Project filter */
+  const filterChips = document.querySelectorAll('.filter-chip');
+  const projects = document.querySelectorAll('.project[data-tags]');
+  filterChips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach((c) => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      const filter = chip.getAttribute('data-filter');
+      projects.forEach((project) => {
+        const tags = (project.getAttribute('data-tags') || '').split(' ');
+        const match = filter === 'all' || tags.includes(filter);
+        project.classList.toggle('is-dimmed', !match);
+      });
+    });
+  });
+
   /* Smooth scroll fallback */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
