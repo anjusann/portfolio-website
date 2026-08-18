@@ -1,6 +1,8 @@
-# Anju Mathew — Portfolio
+# Anju Mathew — Portfolio (v2, dense editorial redesign)
 
 A premium, editorial-style personal portfolio built with plain HTML, CSS and vanilla JavaScript. No build step, no frameworks, no dependencies beyond Google Fonts.
+
+This is a **complete visual redesign** of the original layout — denser, more visual, with real case-study compositions instead of small equal-sized cards.
 
 ## Structure
 
@@ -19,43 +21,43 @@ portfolio/
 
 ## Running it
 
-Just open `index.html` in a browser — no server or build tools required.
+Open `index.html` directly in a browser — no server or build tools required.
 
-For live-reload during editing, any static server works, e.g.:
+For live-reload during editing, any static server works, e.g. `npx serve .`
 
-```
-npx serve .
-```
+## What changed from v1
+
+- **Page composition** now runs Hero → Stats strip → Selected Work (all 4 case studies) → Engineering → Current Role → Skills → Timeline → Contact. The separate About/Philosophy/Certifications/Education sections were dropped to cut text density, per the redesign brief.
+- **Section backgrounds alternate**: near-black hero and stats strip → **off-white paper section** for all four project case studies → back to dark for Engineering, Current Role, Skills, Timeline and Contact. This is the "dark → light → dark" rhythm called out in the brief, and it's what makes the project screenshots pop.
+- **Project 01 (Volga Tigris)** is treated as the hero project: a large (~65%-width) browser mockup with an oversized outlined "01" behind it, and a sticky info panel beside it.
+- **Project 02 (Blossom Valley)** breaks the 49s → 9s metric out into its own full-width dark band — the single strongest visual moment on the page, as requested.
+- **Project 03 (Aurifer Tax)** uses a WordPress ↓ Laravel migration diagram instead of a mockup.
+- **Project 04 (Five Four 54)** is intentionally compact and quieter than the other three.
+- Added a **scroll-progress bar**, an infinite **marquee strip** of tech keywords under the hero and above the footer, and a **12-column grid** with sticky project rails on desktop.
+- Skills are now a typographic list ("ecosystem"), not bordered cards.
+
+## Swapping in real project screenshots
+
+All four projects currently use CSS-built placeholder browser mockups since no screenshots were provided. To swap in real ones:
+
+1. Add images to `assets/images/projects/` (suggested names: `volga-tigris.webp`, `blossom-valley.webp`, `aurifer.webp`, `fivefour54.webp`).
+2. In `index.html`, replace the `.browser-canvas` markup inside the relevant `.browser-mock` with an `<img loading="lazy" ...>` tag, keeping the `.browser-chrome` bar above it.
+3. The `.browser-mock`, `.browser-mock--lg` and `.browser-mock--sm` classes already control sizing — an `<img>` dropped into `.browser-canvas` will fill the available width automatically with `width: 100%`.
 
 ## Design system
 
-- **Colors** — near-black graphite background (`#0B0C0E`), off-white text (`#ECEAE2`), single brass/gold accent (`#C6A15B`). Defined as CSS custom properties at the top of `style.css`.
-- **Type** — Space Grotesk (display headings), Manrope (body copy), IBM Plex Mono (labels, eyebrows, code fragments, nav).
-- **Signature element** — the hero terminal window types out real Laravel/PHP code fragments, tying the visual language directly to the stack described in the copy.
-- **Motion** — scroll reveals, a scroll-spy nav, animated counters, a custom cursor (desktop only) and a typing terminal. Everything respects `prefers-reduced-motion`.
-
-## Swapping in real project images
-
-The four project sections currently use CSS-built placeholder compositions (browser mockup, metric card, migration diagram, editorial grid) instead of screenshots, since none were provided.
-
-To use real screenshots:
-
-1. Add images to `assets/images/projects/` (suggested names: `volga-tigris.webp`, `blossom-valley.webp`, `aurifer.webp`, `fivefour54.webp`).
-2. In `index.html`, replace the relevant `.project-media` inner markup (e.g. `.browser-mock`) with an `<img>` tag pointing at the new file, keeping the `.project-media` wrapper and `loading="lazy"` on the image.
-3. Adjust `.project-media img` sizing in `style.css` if needed (`width: 100%; border-radius: 8px;` is a good starting point).
-
-## Editing content
-
-All copy lives directly in `index.html` — there's no CMS or data file. Section order matches the on-page nav: Hero → About → Current Role → Work → Skills → Experience → Engineering → Performance → Philosophy → Credentials → Contact.
+- **Colors** — near-black ink (`#0A0B0D` / `#131519`) for most sections, a warm parchment "paper" tone (`#E8E3D6`) for the project section, and a single brass/gold accent (`#C6A15B` on dark, `#8C6A2E` on paper for contrast).
+- **Type** — Space Grotesk (display), Manrope (body), IBM Plex Mono (labels, eyebrows, code, nav).
+- **Motion** — scroll reveals, a scroll-spy nav, a top scroll-progress bar, animated counters, marquee strips, a custom cursor (desktop only) and a typing terminal. Everything respects `prefers-reduced-motion`.
 
 ## Accessibility
 
 - Semantic landmarks (`header`, `main`, `footer`, `section`) and a single `h1`.
 - Visible keyboard focus states on all interactive elements.
-- `prefers-reduced-motion` disables scroll reveals, the typing animation and smooth scrolling.
+- `prefers-reduced-motion` disables scroll reveals, the marquee, the typing animation and smooth scrolling.
 - Skip-to-content link for keyboard users.
 - Custom cursor is automatically disabled on touch/coarse-pointer devices.
 
 ## Browser support
 
-Built on standard CSS Grid, `IntersectionObserver` and `requestAnimationFrame` — supported in all current major browsers (Chrome, Safari, Firefox, Edge).
+Built on standard CSS Grid, `position: sticky`, `IntersectionObserver` and `requestAnimationFrame` — supported in all current major browsers (Chrome, Safari, Firefox, Edge).
