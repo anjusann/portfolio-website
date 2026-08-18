@@ -3,345 +3,576 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anju Mathew | PHP (Laravel) Developer — Dubai, UAE</title>
-<meta name="description" content="Anju Mathew — PHP (Laravel) Developer with 5+ years building and maintaining production web applications. Based in Dubai, UAE. Available immediately.">
+<title>Anju Mathew | Full Stack Developer in Dubai | PHP &amp; Laravel</title>
+<meta name="description" content="Anju Mathew is a Dubai-based Full Stack Developer specializing in PHP, Laravel and WordPress. 5+ years building and maintaining production websites and client applications for the UAE market.">
+<meta name="keywords" content="Full Stack Developer Dubai, PHP Developer Dubai, Laravel Developer Dubai, Web Developer UAE">
+<meta name="author" content="Anju Mathew">
 
-<meta property="og:title" content="Anju Mathew | PHP (Laravel) Developer">
-<meta property="og:description" content="5+ years building and maintaining production PHP/Laravel web applications. Based in Dubai, UAE — available immediately.">
-<meta property="og:image" content="assets/images/profile.jpg">
+<!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:title" content="Anju Mathew | Full Stack Developer in Dubai | PHP &amp; Laravel">
+<meta property="og:description" content="Full Stack Developer based in Dubai, UAE. PHP, Laravel, WordPress &amp; MySQL specialist with 5+ years building production web applications.">
+<meta property="og:url" content="https://anjumathew.dev/">
+<meta property="og:site_name" content="Anju Mathew — Portfolio">
 
-<link rel="icon" href="assets/images/favicon.png">
+<link rel="canonical" href="https://anjumathew.dev/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23C6A15B%22 font-family=%22monospace%22>&lt;/&gt;</text></svg>">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<!-- Custom cursor (desktop only) -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-dot"></span>
+  <span class="cursor-label"></span>
+</div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="container nav-flex">
-    <a href="#" class="logo">Anju<span>Mathew</span></a>
+<!-- Skip link -->
+<a href="#main" class="skip-link">Skip to content</a>
 
-    <button id="navToggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">ANJU<span>MATHEW</span></a>
 
-    <ul id="navList">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-    </ul>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#work" data-nav>Work</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <span class="nav-location">DUBAI, UAE</span>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
-</nav>
+</header>
 
 <main id="main">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-blob blob-1"></div>
-  <div class="hero-blob blob-2"></div>
-  <div class="hero-blob blob-3"></div>
-
-  <div class="container hero-flex animate">
-    <div class="hero-text">
-      <p class="badge">📍 Dubai, UAE &nbsp;·&nbsp; Available Immediately</p>
-      <h1>Hi, I'm <span class="gradient-text">Anju Mathew</span></h1>
-      <h2>PHP (Laravel) Developer</h2>
-
-      <p class="hero-lead">
-        <strong>5+ years</strong> building, enhancing, and supporting production web
-        applications — from enterprise monitoring dashboards to client-facing
-        business sites. Core strengths in <strong>PHP (Core &amp; Laravel), WordPress,
-        MySQL, and JavaScript</strong>, with hands-on experience managing hosting and
-        deployment end to end.
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">DUBAI, UAE &middot; FULL STACK DEVELOPER</p>
+      <h1 class="hero-headline reveal">
+        I build high-performance<br>
+        digital experiences<br>
+        for businesses.
+      </h1>
+      <p class="hero-sub reveal">
+        I&rsquo;m Anju Mathew &mdash; a PHP/Laravel developer with 5+ years of experience
+        building, improving and maintaining production web applications and client websites.
       </p>
 
-      <div class="hero-buttons">
-        <a class="btn btn-gradient" href="assets/resume/Anju_Mathew_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
-        <a class="btn btn-outline" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download CV</a>
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn btn-primary" data-cursor="VIEW">
+          <span>View Selected Work</span>
+        </a>
+        <a href="#contact" class="btn btn-ghost" data-cursor="VIEW">
+          <span>Let&rsquo;s Connect</span>
+        </a>
       </div>
 
-      <div class="hero-stats">
-        <div class="stat"><strong>5+</strong><span>Years Experience</span></div>
-        <div class="stat"><strong>20+</strong><span>Client Websites</span></div>
-        <div class="stat"><strong>2</strong><span>Global Enterprise Projects</span></div>
-      </div>
+      <p class="hero-status reveal">
+        <span class="status-dot"></span>
+        Currently working at Volga Tigris Digital Marketing Agency
+      </p>
     </div>
 
-    <div class="hero-photo-wrap">
-      <div class="hero-photo-ring">
-        <img src="assets/images/profile.jpg" alt="Portrait of Anju Mathew">
+    <div class="hero-visual reveal" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">routes/web.php</span>
+        </div>
+        <div class="terminal-body">
+          <pre id="terminalCode"></pre><span class="terminal-cursor">&#9608;</span>
+        </div>
       </div>
-      <div class="floating-chip chip-1">🚀 Laravel Specialist</div>
-      <div class="floating-chip chip-2">🤖 AI-Assisted Dev</div>
+      <div class="hero-tags">
+        <span>PHP</span><span>Laravel</span><span>MySQL</span><span>JavaScript</span><span>WordPress</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <p class="eyebrow reveal">ABOUT</p>
+    <h2 class="section-title reveal">Developer who thinks beyond the code.</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I have spent the last five-plus years building the parts of the web that businesses
+          actually depend on &mdash; client sites, internal tools and production applications
+          that need to keep working long after launch day. I currently work as a Web Developer
+          at Volga Tigris Digital Marketing Agency in Dubai, where I maintain and build across a
+          portfolio of concurrent client projects.
+        </p>
+        <p>
+          My core stack is PHP and Laravel, extended by JavaScript, MySQL and WordPress &mdash;
+          but the work itself rarely stays inside one layer. I move between backend logic, frontend
+          implementation, CMS configuration, hosting and deployment, often on the same project in
+          the same week. Recently, that has included pairing traditional development with
+          AI-assisted workflows to move faster without cutting corners on quality.
+        </p>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="5" data-suffix="+">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="10" data-suffix="+">0</span>
+          <span class="stat-label">Client Websites Managed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num-text">Dubai</span>
+          <span class="stat-label">UAE Based</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num-text">Full&nbsp;Stack</span>
+          <span class="stat-label">Development</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section tint-violet animate">
-  <div class="container about-flex">
-    <div class="section-tag">
-      <span class="tag-pill pill-violet">About Me</span>
-      <h2>Turning requirements into reliable, production-ready code</h2>
+<!-- ===================== CURRENT ROLE ===================== -->
+<section class="current-role">
+  <div class="section-inner">
+    <div class="role-card reveal">
+      <div class="role-head">
+        <p class="eyebrow">CURRENTLY</p>
+        <h3>Web Developer &mdash; Volga Tigris Digital Marketing Agency</h3>
+        <p class="role-meta">Dubai, UAE &middot; June 2026 &mdash; Present</p>
+      </div>
+      <p class="role-desc">
+        I manage and maintain multiple client websites spanning WordPress, core PHP,
+        Laravel and Botble CMS &mdash; from day-to-day fixes to full platform rebuilds.
+      </p>
+      <ul class="role-highlights">
+        <li><span class="hl-index">01</span>Managing 10+ client websites across multiple industries</li>
+        <li><span class="hl-index">02</span>Building custom Laravel &amp; Botble CMS experiences</li>
+        <li><span class="hl-index">03</span>Improving Core Web Vitals through WebP image optimization and font-loading strategy</li>
+        <li><span class="hl-index">04</span>Handling hosting, deployment and DNS/domain configuration</li>
+        <li><span class="hl-index">05</span>Supporting SEO and content operations across client sites</li>
+        <li><span class="hl-index">06</span>Using AI-assisted development with Claude and ChatGPT to ship faster</li>
+      </ul>
     </div>
-    <p class="lead-text">
-      PHP Developer with over five years of experience across the full software
-      development lifecycle — design, development, testing, deployment, and
-      production support — in Agile environments. Experience spans enterprise
-      monitoring platforms for infrastructure projects in Hong Kong and the UK,
-      and, more recently, full-cycle development and hosting management for
-      client websites at a Dubai digital marketing agency. Comfortable owning a
-      project end to end: backend logic, frontend implementation, database
-      design, SEO-friendly content, and the server it all runs on.
-    </p>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section animate">
-  <div class="container">
-    <div class="section-tag center">
-      <span class="tag-pill pill-mint">Career</span>
-      <h2>Work Experience</h2>
+<!-- ===================== WORK ===================== -->
+<section class="work" id="work">
+  <div class="section-inner">
+    <p class="eyebrow reveal">SELECTED WORK</p>
+    <h2 class="section-title reveal">Production websites, not tutorial projects.</h2>
+
+    <!-- PROJECT 01 — Volga Tigris -->
+    <article class="project project-01 reveal">
+      <div class="project-num">01</div>
+      <div class="project-media">
+        <div class="browser-mock">
+          <div class="browser-chrome">
+            <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+            <span class="browser-url">volgatigris.com</span>
+          </div>
+          <div class="browser-canvas vt-canvas">
+            <div class="mock-nav"></div>
+            <div class="mock-hero">
+              <div class="mock-line w-60"></div>
+              <div class="mock-line w-40"></div>
+              <div class="mock-btn"></div>
+            </div>
+            <div class="mock-widget"></div>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-industry">Digital Marketing Agency</p>
+        <h3 class="project-name">Volga&nbsp;Tigris</h3>
+        <p class="project-role">Web Developer</p>
+        <p class="project-desc">
+          The agency&rsquo;s own website and my current professional home. Built with Laravel,
+          Blade and Eloquent on the backend, with hand-written JavaScript driving the interactive
+          front end.
+        </p>
+        <p class="project-contribution">
+          <strong>Key contribution &mdash;</strong> Implemented an Eloquent-backed enquiry form
+          with country-code selection and dedicated Laravel controller routing, plus a persistent
+          floating contact widget for call, WhatsApp and email.
+        </p>
+        <div class="project-tech">
+          <span>Laravel</span><span>PHP</span><span>Blade</span><span>Eloquent</span><span>JavaScript</span><span>HTML/CSS</span>
+        </div>
+        <a href="https://www.volgatigris.com/" target="_blank" rel="noopener" class="project-link" data-cursor="OPEN ↗">
+          Visit site <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 — Blossom Valley -->
+    <article class="project project-02 reveal">
+      <div class="project-num">02</div>
+      <div class="project-media">
+        <div class="metric-card">
+          <p class="metric-label">Team &amp; gallery page load time</p>
+          <div class="metric-row">
+            <span class="metric-before">49s</span>
+            <span class="metric-arrow">&rarr;</span>
+            <span class="metric-after">9s</span>
+          </div>
+          <p class="metric-note">Achieved through image compression, WebP conversion and gallery optimization.</p>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-industry">Healthcare &middot; Child Development</p>
+        <h3 class="project-name">Blossom Valley<br>Child&nbsp;Development&nbsp;Centre</h3>
+        <p class="project-role">Web Developer</p>
+        <p class="project-desc">
+          Migrated the site from WordPress to a custom PHP build and continue ongoing development
+          and content updates &mdash; 15+ service pages, blog content, a dedicated Partner With Us /
+          CSR page, and SEO-focused copy throughout.
+        </p>
+        <p class="project-contribution">
+          <strong>Key contribution &mdash;</strong> Diagnosed and resolved SMTP delivery issues,
+          and rebuilt the media pipeline with gallery optimization and WebP conversion.
+        </p>
+        <div class="project-tech">
+          <span>Core PHP</span><span>MySQL</span><span>SMTP</span><span>Image Optimization</span><span>SEO</span>
+        </div>
+        <a href="https://blossomvalleytherapycentre.com/" target="_blank" rel="noopener" class="project-link" data-cursor="OPEN ↗">
+          Visit site <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 — Aurifer Tax -->
+    <article class="project project-03 reveal">
+      <div class="project-num">03</div>
+      <div class="project-media">
+        <div class="migration-diagram">
+          <div class="migration-node from">
+            <span class="migration-tag">WordPress</span>
+            <span class="migration-sub">Elementor</span>
+          </div>
+          <div class="migration-line">
+            <span>MIGRATION</span>
+          </div>
+          <div class="migration-node to">
+            <span class="migration-tag">Laravel</span>
+            <span class="migration-sub">Blade &middot; Eloquent</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-industry">Tax &amp; Business Advisory</p>
+        <h3 class="project-name">Aurifer&nbsp;Tax</h3>
+        <p class="project-role">Web Developer</p>
+        <p class="project-desc">
+          A full technical migration &mdash; rebuilding an existing WordPress website as a custom
+          Laravel application using MVC architecture, while restructuring pages to preserve
+          existing SEO value and URLs.
+        </p>
+        <p class="project-contribution">
+          <strong>Key contribution &mdash;</strong> Owned the migration end to end: Laravel setup,
+          Blade templating, Eloquent-backed content, and URL structure preserved to protect
+          existing search rankings.
+        </p>
+        <div class="project-tech">
+          <span>Laravel</span><span>Eloquent</span><span>Blade</span><span>MVC</span><span>MySQL</span>
+        </div>
+        <a href="https://aurifer.tax/" target="_blank" rel="noopener" class="project-link" data-cursor="OPEN ↗">
+          Visit site <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- PROJECT 04 — FiveFour54 -->
+    <article class="project project-04 reveal">
+      <div class="project-num">04</div>
+      <div class="project-media">
+        <div class="editorial-preview">
+          <div class="ep-frame">
+            <div class="ep-line w-70"></div>
+            <div class="ep-line w-50"></div>
+            <div class="ep-grid">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-info">
+        <p class="project-industry">Corporate &middot; Business Website</p>
+        <h3 class="project-name">Five&nbsp;Four&nbsp;54</h3>
+        <p class="project-role">Web Developer</p>
+        <p class="project-desc">
+          A selected client project focused on a responsive, business-focused front end &mdash;
+          clear content presentation and a consistent experience across devices.
+        </p>
+        <div class="project-tech">
+          <span>Responsive Frontend</span><span>Cross-device UI</span>
+        </div>
+        <a href="https://fivefour54.com/" target="_blank" rel="noopener" class="project-link" data-cursor="OPEN ↗">
+          Visit site <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="skills" id="skills">
+  <div class="section-inner">
+    <p class="eyebrow reveal">TECHNICAL EXPERTISE</p>
+    <h2 class="section-title reveal">Across the stack, not just one layer.</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3>Backend</h3>
+        <ul>
+          <li>PHP</li><li>Laravel</li><li>OOP</li><li>MVC</li><li>REST APIs</li>
+          <li>AJAX</li><li>Eloquent ORM</li><li>Blade</li><li>Artisan</li><li>Migrations &amp; Seeders</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Frontend</h3>
+        <ul>
+          <li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>jQuery</li><li>Responsive Design</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Database</h3>
+        <ul>
+          <li>MySQL</li><li>Relational Database Design</li><li>Query Optimization</li><li>Indexing</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>CMS</h3>
+        <ul>
+          <li>WordPress</li><li>Botble CMS</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>DevOps &amp; Web Operations</h3>
+        <ul>
+          <li>Git</li><li>GitHub</li><li>Docker</li><li>Hostinger</li><li>GoDaddy</li>
+          <li>Bluehost</li><li>Combell</li><li>DNS</li><li>Domain Configuration</li><li>Deployment</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>AI-Assisted Development</h3>
+        <ul>
+          <li>Claude AI</li><li>ChatGPT</li><li>GitHub Copilot</li><li>Prompt Engineering</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE TIMELINE ===================== -->
+<section class="experience" id="experience">
+  <div class="section-inner">
+    <p class="eyebrow reveal">EXPERIENCE</p>
+    <h2 class="section-title reveal">Career timeline.</h2>
 
     <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-marker marker-mint">💼</div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <div class="timeline-head">
-            <h3>Web Developer</h3>
-            <span class="timeline-date">Jun 2026 – Present</span>
-          </div>
-          <p class="timeline-org">Volga Tigris Digital Marketing Agency · Dubai, UAE</p>
-          <ul>
-            <li>Manage and maintain 10+ client websites concurrently on WordPress, Core PHP, and Laravel (Botble CMS).</li>
-            <li>Built a fully custom Laravel/Botble homepage using Eloquent models, Blade templating, and a reusable design system.</li>
-            <li>Handle hosting and deployment across Hostinger, GoDaddy, Bluehost, and Combell, including DNS and domain configuration.</li>
-            <li>Use Claude AI and ChatGPT for prompt-assisted development, debugging, and content workflows.</li>
-          </ul>
+          <p class="timeline-date">June 2026 &mdash; Present</p>
+          <h3>Web Developer</h3>
+          <p class="timeline-org">Volga Tigris Digital Marketing Agency &middot; Dubai, UAE</p>
+          <p class="timeline-desc">Maintaining and building across a portfolio of concurrent client websites on WordPress, core PHP, Laravel and Botble CMS.</p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker marker-violet">⚙️</div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <div class="timeline-head">
-            <h3>Software Engineer</h3>
-            <span class="timeline-date">Jul 2021 – Jan 2025</span>
-          </div>
-          <p class="timeline-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
-          <ul>
-            <li>Built and maintained full-stack Laravel applications (Eloquent ORM, Blade, migrations, RESTful APIs) for live geotechnical and rail-monitoring dashboards.</li>
-            <li>Refactored legacy PHP into cleaner, MVC-aligned Laravel code, easing maintenance and onboarding.</li>
-            <li>Led code reviews and mentored junior developers on Laravel conventions and Git-based workflows.</li>
-            <li>Rebuilt dashboard and reporting UI components, cutting page load times by up to 40%.</li>
-          </ul>
+          <p class="timeline-date">July 2021 &mdash; January 2025</p>
+          <h3>Software Engineer</h3>
+          <p class="timeline-org">Maxwell Geosystems India Pvt Ltd</p>
+          <p class="timeline-desc">Developed and maintained features for real-time monitoring and reporting platforms used on live infrastructure projects.</p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-marker marker-amber">🌱</div>
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
         <div class="timeline-content">
-          <div class="timeline-head">
-            <h3>Junior PHP Programmer</h3>
-            <span class="timeline-date">Jul 2019 – Jun 2021</span>
-          </div>
-          <p class="timeline-org">Maxwell Geosystems India Pvt Limited · Kochi, Kerala</p>
-          <ul>
-            <li>Contributed core PHP features to production monitoring applications, including the HS2 Railway (UK) platform.</li>
-            <li>Provided real-time application support and cross-browser testing for live client systems.</li>
-            <li>Supported deployment and maintained system documentation for development and QA teams.</li>
-          </ul>
+          <p class="timeline-date">July 2019 &mdash; June 2021</p>
+          <h3>Junior PHP Programmer</h3>
+          <p class="timeline-org">Maxwell Geosystems India Pvt Ltd</p>
+          <p class="timeline-desc">Started my professional development career building PHP features under senior engineering guidance.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section tint-peach animate">
-  <div class="container">
-    <div class="section-tag center">
-      <span class="tag-pill pill-amber">Toolkit</span>
-      <h2>Technical Skills</h2>
-    </div>
-
-    <div class="grid">
-      <div class="skill-card">
-        <div class="skill-icon icon-indigo">🧩</div>
-        <h3>Backend Development</h3>
-        <p>PHP (Core, Laravel), MVC Architecture, RESTful APIs, Secure Coding, Code Refactoring</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-rose">🔥</div>
-        <h3>Laravel Ecosystem</h3>
-        <p>Eloquent ORM, Blade Templating, Artisan CLI, Migrations &amp; Seeders, Routing &amp; Middleware, Composer</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-blue">🎨</div>
-        <h3>CMS &amp; Frontend</h3>
-        <p>WordPress, Botble CMS, JavaScript, HTML5, CSS3, jQuery, Responsive UI</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-mint">🗄️</div>
-        <h3>Database &amp; Data</h3>
-        <p>MySQL, SQL Query Optimization, Relational Database Design, Data Validation</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-amber">☁️</div>
-        <h3>Hosting &amp; Deployment</h3>
-        <p>Hostinger, GoDaddy, Bluehost, Combell, Domain &amp; DNS Configuration, Site Deployment</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-violet">🤖</div>
-        <h3>AI-Assisted Development</h3>
-        <p>Claude AI, ChatGPT, GitHub Copilot, Prompt Engineering</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-teal">🧪</div>
-        <h3>Testing &amp; Quality</h3>
-        <p>Unit Testing, Functional Testing, Debugging, Bug Fixing</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon icon-coral">🛠️</div>
-        <h3>Tools &amp; Process</h3>
-        <p>Git, GitHub, Jira, Agile/Scrum, Docker</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section animate">
-  <div class="container">
-    <div class="section-tag center">
-      <span class="tag-pill pill-blue">Selected Work</span>
-      <h2>Project Experience</h2>
-    </div>
-
-    <div class="grid">
-      <div class="project-card">
-        <div class="project-banner banner-1">🌿</div>
-        <div class="project-body">
-          <h3>Blossom Valley Child Development Centre</h3>
-          <p class="project-meta">blossomvalleytherapycentre.com</p>
-          <p>Migrated the site from WordPress to a custom PHP build. Rebuilt 15+ service pages and the Partner With Us (CSR) page, and cut gallery page load time from roughly 49s to roughly 9s through image optimization.</p>
-          <p class="tech-tags"><span>PHP</span><span>MySQL</span><span>SEO</span></p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-banner banner-2">🐯</div>
-        <div class="project-body">
-          <h3>Volga Tigris Corporate Website</h3>
-          <p class="project-meta">volgatigris.com</p>
-          <p>Built a fully custom homepage on Laravel using Eloquent and Blade, including a reusable design system, enquiry form, and a persistent floating contact widget.</p>
-          <p class="tech-tags"><span>Laravel</span><span>Botble CMS</span><span>JavaScript</span></p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-banner banner-3">📊</div>
-        <div class="project-body">
-          <h3>Aurifier Tax — WordPress to Laravel</h3>
-          <p class="project-meta">Migration Project</p>
-          <p>Converted an existing WordPress website into a custom Laravel application, restructuring pages and preserving SEO value and URLs.</p>
-          <p class="tech-tags"><span>Laravel</span><span>Eloquent</span><span>MVC</span></p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-banner banner-4">💡</div>
-        <div class="project-body">
-          <h3>Ampsy Consultancy Website</h3>
-          <p class="project-meta">Client Site</p>
-          <p>Designed and built the company website from the ground up, including information architecture and a responsive layout, taking the client from no web presence to a live site.</p>
-          <p class="tech-tags"><span>PHP</span><span>Responsive UI</span></p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-banner banner-5">🏗️</div>
-        <div class="project-body">
-          <h3>Geotechnical Monitoring System</h3>
-          <p class="project-meta">Enterprise · Lantau, Hong Kong</p>
-          <p>Real-time monitoring platform for large-scale infrastructure. Contributed backend development, dashboard optimization, and production support.</p>
-          <p class="tech-tags"><span>PHP</span><span>Laravel</span><span>MySQL</span></p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-banner banner-6">🚄</div>
-        <div class="project-body">
-          <h3>HS2 Railway Project</h3>
-          <p class="project-meta">Enterprise · UK</p>
-          <p>Supported system upgrades, testing, deployment, and live production issue resolution, ensuring data accuracy and stability.</p>
-          <p class="tech-tags"><span>PHP</span><span>MySQL</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section tint-mint animate">
-  <div class="container">
-    <div class="section-tag center">
-      <span class="tag-pill pill-rose">Continuous Learning</span>
-      <h2>Certifications</h2>
-    </div>
-    <div class="grid cert-grid">
-      <div class="cert-card"><span class="cert-check">✓</span> 1 Million Prompters — Dubai Future Foundation &amp; Dubai Centre for Artificial Intelligence</div>
-      <div class="cert-card"><span class="cert-check">✓</span> Google Data Analytics Professional Certificate</div>
-      <div class="cert-card"><span class="cert-check">✓</span> Agile Software Development — LinkedIn Learning</div>
-      <div class="cert-card"><span class="cert-check">✓</span> DevOps Professional Certificate (Foundational)</div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section contact-section animate">
-  <div class="contact-blob blob-a"></div>
-  <div class="contact-blob blob-b"></div>
-  <div class="container contact-box">
-    <span class="tag-pill pill-white">Let's Talk</span>
-    <h2>Let's build something great together</h2>
-    <p class="lead-text light">
-      Open to PHP / Laravel Developer and Software Engineer roles in the UAE
-      and remote. Reach out any time — I usually reply within a day.
+<!-- ===================== ENGINEERING EXPERIENCE ===================== -->
+<section class="engineering">
+  <div class="section-inner">
+    <p class="eyebrow reveal">BEYOND MARKETING WEBSITES</p>
+    <h2 class="section-title reveal">Engineering experience.</h2>
+    <p class="engineering-lead reveal">
+      Before agency work, I spent over five years building software for live infrastructure
+      projects &mdash; where uptime and data accuracy weren&rsquo;t optional.
     </p>
 
-    <div class="contact-details">
-      <a href="mailto:anjusannalex@gmail.com" class="contact-pill">✉️ anjusannalex@gmail.com</a>
-      <a href="tel:+971564238408" class="contact-pill">📱 +971 56 423 8408</a>
-      <a href="https://github.com/anjusann" target="_blank" rel="noopener" class="contact-pill">💻 github.com/anjusann</a>
-      <a href="https://www.linkedin.com/in/anju-m0511" target="_blank" rel="noopener" class="contact-pill">🔗 linkedin.com/in/anju-m0511</a>
+    <div class="engineering-grid">
+      <div class="eng-card reveal">
+        <h3>Geotechnical Monitoring &mdash; Lantau, Hong Kong</h3>
+        <p>Developed features for real-time monitoring dashboards and reporting systems.</p>
+      </div>
+      <div class="eng-card reveal">
+        <h3>High Speed 2 Railway &mdash; UK</h3>
+        <p>Worked on real-time data processing and monitoring systems.</p>
+      </div>
     </div>
 
-    <a class="btn btn-white" href="assets/resume/Anju_Mathew_Resume.pdf" download>Download Resume</a>
+    <div class="engineering-tags reveal">
+      <span>Laravel</span><span>PHP</span><span>MySQL</span><span>APIs</span><span>Dashboards</span>
+      <span>Data Processing</span><span>Reporting</span><span>Testing</span><span>Production Support</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PERFORMANCE ===================== -->
+<section class="performance">
+  <div class="section-inner performance-inner">
+    <p class="eyebrow reveal">PERFORMANCE MATTERS</p>
+    <h2 class="section-title reveal">Fast experiences are part of good development.</h2>
+    <div class="performance-metric reveal">
+      <span class="metric-before big">49s</span>
+      <span class="metric-arrow big">&rarr;</span>
+      <span class="metric-after big">9s</span>
+    </div>
+    <p class="performance-note reveal">
+      Blossom Valley Child Development Centre &mdash; gallery/team page load time,
+      improved through image compression, WebP conversion and general asset optimization.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== PHILOSOPHY ===================== -->
+<section class="philosophy">
+  <div class="section-inner">
+    <p class="eyebrow reveal">HOW I WORK</p>
+    <h2 class="section-title reveal">Development philosophy.</h2>
+
+    <div class="philosophy-grid">
+      <div class="phil-item reveal">
+        <span class="phil-index">01</span>
+        <h3>Build With Purpose</h3>
+        <p>Clean architecture and maintainable code.</p>
+      </div>
+      <div class="phil-item reveal">
+        <span class="phil-index">02</span>
+        <h3>Performance First</h3>
+        <p>Fast experiences are part of good development.</p>
+      </div>
+      <div class="phil-item reveal">
+        <span class="phil-index">03</span>
+        <h3>Think Product, Not Just Code</h3>
+        <p>Understand the business objective behind the feature.</p>
+      </div>
+      <div class="phil-item reveal">
+        <span class="phil-index">04</span>
+        <h3>Keep Improving</h3>
+        <p>Use modern tools and AI-assisted workflows intelligently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS + EDUCATION ===================== -->
+<section class="credentials">
+  <div class="section-inner credentials-grid">
+    <div class="reveal">
+      <p class="eyebrow">CERTIFICATIONS</p>
+      <ul class="cred-list">
+        <li>
+          <strong>1 Million Prompters Certification</strong>
+          <span>Dubai Future Foundation &amp; Dubai Centre for Artificial Intelligence</span>
+        </li>
+        <li>
+          <strong>Google Data Analytics Professional Certificate</strong>
+        </li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">EDUCATION</p>
+      <ul class="cred-list">
+        <li>
+          <strong>Dual Degree Master of Computer Applications (DDMCA)</strong>
+          <span>Amal Jyothi College of Engineering &middot; MG University, Kerala, India</span>
+          <span>2014 &mdash; 2019</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <p class="eyebrow reveal">CONTACT</p>
+    <h2 class="contact-headline reveal">Have a project, opportunity or idea?</h2>
+    <p class="contact-sub reveal">
+      I&rsquo;m open to discussing web development opportunities, digital products and
+      challenging technical projects in Dubai and beyond.
+    </p>
+
+    <div class="contact-details reveal">
+      <a href="mailto:anjusannalex@gmail.com" class="contact-row" data-cursor="OPEN ↗">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">anjusannalex@gmail.com</span>
+      </a>
+      <a href="https://linkedin.com/in/anju-m0511" target="_blank" rel="noopener" class="contact-row" data-cursor="OPEN ↗">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/anju-m0511</span>
+      </a>
+      <div class="contact-row contact-row-static">
+        <span class="contact-label">Location</span>
+        <span class="contact-value">Dubai, UAE</span>
+      </div>
+    </div>
+
+    <a href="mailto:anjusannalex@gmail.com" class="btn btn-primary btn-large reveal" data-cursor="OPEN ↗">
+      <span>Start a Conversation</span> <span class="arrow">&rarr;</span>
+    </a>
   </div>
 </section>
 
 </main>
 
+<!-- ===================== FOOTER ===================== -->
 <footer class="footer">
-  <div class="container footer-flex">
-    <p>&copy; <span id="year"></span> Anju Mathew. Built with HTML, CSS &amp; JavaScript.</p>
-    <div class="footer-links">
-      <a href="https://github.com/anjusann" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/anju-m0511" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:anjusannalex@gmail.com">Email</a>
-    </div>
+  <div class="section-inner footer-inner">
+    <span>&copy; <span id="year"></span> Anju Mathew</span>
+    <span>Full Stack Developer &middot; Dubai, UAE</span>
   </div>
 </footer>
 
