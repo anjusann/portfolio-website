@@ -1,8 +1,12 @@
-# Anju Mathew — Portfolio (v2, dense editorial redesign)
+# Anju Mathew — Portfolio (v3, comprehensive rebuild)
 
-A premium, editorial-style personal portfolio built with plain HTML, CSS and vanilla JavaScript. No build step, no frameworks, no dependencies beyond Google Fonts.
+A premium, editorial, case-study-driven portfolio built with plain HTML, CSS and vanilla JavaScript. No build step, no frameworks, no dependencies beyond Google Fonts.
 
-This is a **complete visual redesign** of the original layout — denser, more visual, with real case-study compositions instead of small equal-sized cards.
+This version rebuilds the site around your **real profile photo**, **real resume PDF**, and the specific project details, positioning and page structure from the latest brief — filter bar included.
+
+## ⚠️ One thing to check before you publish
+
+`assets/resume/Anju_Mathew_Resume.pdf` — the file with this exact name in your repo — is **internally titled and headed "Software Engineer,"** not "Full Stack Developer." I pulled it directly from your GitHub repo as instructed (and did not touch `Anju_Mathew_Business_Analyst.pdf` or `Anju_Mathew_Software_Engineer.pdf`), so the filename is correct, but the PDF's actual content still carries the old positioning. Since the whole point of this rebuild is to present you as a Full Stack Developer, a recruiter who downloads this PDF from the site will land on a document headed "Software Engineer" — worth re-exporting the resume with the right header before this goes live.
 
 ## Structure
 
@@ -14,8 +18,11 @@ portfolio/
 ├── js/
 │   └── script.js
 ├── assets/
-│   ├── images/projects/   ← drop real project screenshots here
-│   └── icons/
+│   ├── images/
+│   │   └── profile.jpg        ← your real photo, pulled from the repo
+│   ├── resume/
+│   │   └── Anju_Mathew_Resume.pdf   ← your real resume, pulled from the repo
+│   └── case-study/            ← empty — drop real project screenshots here
 └── README.md
 ```
 
@@ -23,40 +30,37 @@ portfolio/
 
 Open `index.html` directly in a browser — no server or build tools required.
 
-For live-reload during editing, any static server works, e.g. `npx serve .`
+## What's new in this version
 
-## What changed from v1
-
-- **Page composition** now runs Hero → Stats strip → Selected Work (all 4 case studies) → Engineering → Current Role → Skills → Timeline → Contact. The separate About/Philosophy/Certifications/Education sections were dropped to cut text density, per the redesign brief.
-- **Section backgrounds alternate**: near-black hero and stats strip → **off-white paper section** for all four project case studies → back to dark for Engineering, Current Role, Skills, Timeline and Contact. This is the "dark → light → dark" rhythm called out in the brief, and it's what makes the project screenshots pop.
-- **Project 01 (Volga Tigris)** is treated as the hero project: a large (~65%-width) browser mockup with an oversized outlined "01" behind it, and a sticky info panel beside it.
-- **Project 02 (Blossom Valley)** breaks the 49s → 9s metric out into its own full-width dark band — the single strongest visual moment on the page, as requested.
-- **Project 03 (Aurifer Tax)** uses a WordPress ↓ Laravel migration diagram instead of a mockup.
-- **Project 04 (Five Four 54)** is intentionally compact and quieter than the other three.
-- Added a **scroll-progress bar**, an infinite **marquee strip** of tech keywords under the hero and above the footer, and a **12-column grid** with sticky project rails on desktop.
-- Skills are now a typographic list ("ecosystem"), not bordered cards.
+- **Real photo, real resume.** The profile photo is treated with a desaturation + radial vignette (`.photo-frame img` / `.photo-frame::after` in `style.css`) so the plain studio background blends into the dark theme instead of sitting as a stark white rectangle. The resume is a genuine `download` link in three places: hero, About section, and the contact block/footer.
+- **Project filter bar.** ALL / LARAVEL / PHP / MIGRATION / PERFORMANCE chips above the project list. Clicking one dims non-matching projects (`is-dimmed`, opacity only — nothing is removed from the DOM, so layout never jumps). Tags live on each `<article class="project" data-tags="...">`.
+- **Renumbered, re-scoped projects** to match your latest descriptions: 01 Blossom Valley (Core PHP redesign + the 49s→9s metric band), 02 Five Four 54 (WordPress → Custom PHP, "End-to-End Website Rebuild"), 03 Volga Tigris (the largest, hero-style project — tagged "CURRENT PROJECT," full-page Laravel Blade redesign), 04 Aurifer Tax (three-step "Same Design. New Architecture." flow).
+- **A dedicated Performance/Impact section** below the project list restates the 49s → 9s result at a much larger scale as a standalone brand statement, on top of (not instead of) the smaller version inside the Blossom Valley card.
+- **New sections**: About (with the two-column Business Websites / Software Engineering split), What I Actually Do (Build / Redesign / Migrate / Optimize / Maintain / Deploy), Education + Certifications (deliberately kept visually smaller than the project case studies), Professional Approach (four short principles).
+- **Nav** now reads Work / About / Experience / Skills / Contact, with an "● AVAILABLE FOR OPPORTUNITIES" status instead of just the city.
 
 ## Swapping in real project screenshots
 
-All four projects currently use CSS-built placeholder browser mockups since no screenshots were provided. To swap in real ones:
-
-1. Add images to `assets/images/projects/` (suggested names: `volga-tigris.webp`, `blossom-valley.webp`, `aurifer.webp`, `fivefour54.webp`).
-2. In `index.html`, replace the `.browser-canvas` markup inside the relevant `.browser-mock` with an `<img loading="lazy" ...>` tag, keeping the `.browser-chrome` bar above it.
-3. The `.browser-mock`, `.browser-mock--lg` and `.browser-mock--sm` classes already control sizing — an `<img>` dropped into `.browser-canvas` will fill the available width automatically with `width: 100%`.
+All four projects still use CSS-built placeholder browser mockups — no real screenshots were supplied. To swap them in, add files to `assets/case-study/` (e.g. `blossom-valley.webp`, `fivefour54.webp`, `volga-tigris.webp`, `aurifer-tax.webp`) and replace the `.browser-canvas` markup inside the matching `.browser-mock` with an `<img loading="lazy" ...>` tag.
 
 ## Design system
 
-- **Colors** — near-black ink (`#0A0B0D` / `#131519`) for most sections, a warm parchment "paper" tone (`#E8E3D6`) for the project section, and a single brass/gold accent (`#C6A15B` on dark, `#8C6A2E` on paper for contrast).
+- **Colors** — near-black ink (`#0A0B0D` / `#131519`) for most sections, a warm parchment "paper" tone (`#E8E3D6`) for the project section, single brass/gold accent (`#C6A15B` on dark, `#8C6A2E` on paper).
 - **Type** — Space Grotesk (display), Manrope (body), IBM Plex Mono (labels, eyebrows, code, nav).
-- **Motion** — scroll reveals, a scroll-spy nav, a top scroll-progress bar, animated counters, marquee strips, a custom cursor (desktop only) and a typing terminal. Everything respects `prefers-reduced-motion`.
+- **Motion** — scroll reveals, scroll-spy nav, a top scroll-progress bar, animated counters, marquee strips, a custom cursor (desktop only), a typing terminal, and the project filter. Everything respects `prefers-reduced-motion`.
 
 ## Accessibility
 
 - Semantic landmarks (`header`, `main`, `footer`, `section`) and a single `h1`.
-- Visible keyboard focus states on all interactive elements.
+- Visible keyboard focus states on all interactive elements, including filter chips.
 - `prefers-reduced-motion` disables scroll reveals, the marquee, the typing animation and smooth scrolling.
 - Skip-to-content link for keyboard users.
 - Custom cursor is automatically disabled on touch/coarse-pointer devices.
+- Profile photo has descriptive alt text.
+
+## Tested
+
+Screenshot-tested headless at 390px, 768px, 1024px, 1280px and 1440px — no horizontal overflow at any width, mobile nav opens/closes correctly, project filter verified to dim/restore the right projects, resume download link resolves to the real PDF, no console errors.
 
 ## Browser support
 
