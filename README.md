@@ -1,114 +1,61 @@
-# 👩‍💻 Anju Mathew  
-## Software Engineer  
+# Anju Mathew — Portfolio
 
-📍 UAE | Available for Immediate Joining  
-🔗 Portfolio: https://anjusann.github.io/portfolio-website/
-🔗 LinkedIn: https://linkedin.com/in/anju-m0511  
+A premium, editorial-style personal portfolio built with plain HTML, CSS and vanilla JavaScript. No build step, no frameworks, no dependencies beyond Google Fonts.
 
----
+## Structure
 
-## 🔹 Professional Summary
+```
+portfolio/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── assets/
+│   ├── images/projects/   ← drop real project screenshots here
+│   └── icons/
+└── README.md
+```
 
-I am a **Software Engineer with 5+ years of enterprise experience** in developing, enhancing, and maintaining production web applications. I have worked across the full software development lifecycle in **Agile environments**, contributing to system design, development, testing, deployment support, and production issue resolution.
+## Running it
 
-My experience includes building scalable backend systems, developing responsive user interfaces, integrating APIs, optimizing performance, and supporting live enterprise applications used by global infrastructure projects.
+Just open `index.html` in a browser — no server or build tools required.
 
----
+For live-reload during editing, any static server works, e.g.:
 
-## 🔹 Technical Skills
+```
+npx serve .
+```
 
-### 💻 Backend Development
-- PHP (Core, Laravel)
-- MVC Architecture
-- RESTful API Integration
-- Secure Coding Practices
-- Code Refactoring & Optimization
+## Design system
 
-### 🎨 Frontend Development
-- JavaScript
-- HTML5, CSS3
-- jQuery
-- Responsive UI Design
-- Dashboard & Reporting Interfaces
+- **Colors** — near-black graphite background (`#0B0C0E`), off-white text (`#ECEAE2`), single brass/gold accent (`#C6A15B`). Defined as CSS custom properties at the top of `style.css`.
+- **Type** — Space Grotesk (display headings), Manrope (body copy), IBM Plex Mono (labels, eyebrows, code fragments, nav).
+- **Signature element** — the hero terminal window types out real Laravel/PHP code fragments, tying the visual language directly to the stack described in the copy.
+- **Motion** — scroll reveals, a scroll-spy nav, animated counters, a custom cursor (desktop only) and a typing terminal. Everything respects `prefers-reduced-motion`.
 
-### 🗄 Database & Data
-- MySQL
-- SQL Queries
-- Relational Database Concepts
-- Data Validation & Reporting Support
+## Swapping in real project images
 
-### 🧪 Testing & Quality
-- Unit-level Testing
-- Functional Testing
-- Debugging & Bug Fixing
-- Production Issue Resolution
+The four project sections currently use CSS-built placeholder compositions (browser mockup, metric card, migration diagram, editorial grid) instead of screenshots, since none were provided.
 
-### 🛠 Tools & Methodologies
-- Git, GitHub
-- Jira
-- Agile / Scrum
-- Docker (basic exposure)
-- CI/CD fundamentals
+To use real screenshots:
 
----
+1. Add images to `assets/images/projects/` (suggested names: `volga-tigris.webp`, `blossom-valley.webp`, `aurifer.webp`, `fivefour54.webp`).
+2. In `index.html`, replace the relevant `.project-media` inner markup (e.g. `.browser-mock`) with an `<img>` tag pointing at the new file, keeping the `.project-media` wrapper and `loading="lazy"` on the image.
+3. Adjust `.project-media img` sizing in `style.css` if needed (`width: 100%; border-radius: 8px;` is a good starting point).
 
-## 🔹 Enterprise Project Experience
+## Editing content
 
-### 📌 Geotechnical Monitoring System – Hong Kong  
-**Role:** Software Engineer  
+All copy lives directly in `index.html` — there's no CMS or data file. Section order matches the on-page nav: Hero → About → Current Role → Work → Skills → Experience → Engineering → Performance → Philosophy → Credentials → Contact.
 
-- Developed and enhanced real-time monitoring dashboards for large-scale infrastructure projects  
-- Integrated frontend components with live sensor data  
-- Improved system performance and reporting accuracy  
-- Supported production environments and resolved critical issues  
+## Accessibility
 
-**Tech Stack:** PHP, Laravel, MySQL, JavaScript  
+- Semantic landmarks (`header`, `main`, `footer`, `section`) and a single `h1`.
+- Visible keyboard focus states on all interactive elements.
+- `prefers-reduced-motion` disables scroll reveals, the typing animation and smooth scrolling.
+- Skip-to-content link for keyboard users.
+- Custom cursor is automatically disabled on touch/coarse-pointer devices.
 
----
+## Browser support
 
-### 📌 High Speed 2 (HS2) Railway – UK  
-**Role:** Software Engineer  
-
-- Supported enterprise monitoring and reporting systems  
-- Ensured high data accuracy and availability  
-- Participated in system upgrades, testing, and deployment support  
-- Assisted in maintaining stable production environments  
-
-**Tech Stack:** PHP, MySQL  
-
----
-
-## 🔹 Resume
-
-📄 **Software Engineer Resume**  
-👉 [View Resume](assets/resume/Anju_Mathew_Software_Engineer.pdf)
-
----
-
-## 🔹 Certifications & Continuous Learning
-
-- 1 Million Prompters – Dubai Future Foundation  
-- Agile Software Development – LinkedIn Learning  
-- DevOps Professional Certificate (Foundational)  
-- AWS Cloud Practitioner Essentials – In Progress  
-
----
-
-## 🔹 Why Hire Me?
-
-✔ 5+ years of real-world enterprise experience  
-✔ Strong backend and full-stack development skills  
-✔ Experience with large-scale, production systems  
-✔ Comfortable working in Agile, cross-functional teams  
-✔ Immediate availability in the UAE  
-
----
-
-## 📫 Contact
-
-📧 Email: **anjusannalex@gmail.com**  
-🔗 LinkedIn: https://linkedin.com/in/anju-m0511  
-
----
-
-⭐ *Explore the portfolio website for live UI examples, dark mode support, and frontend interactions.*
+Built on standard CSS Grid, `IntersectionObserver` and `requestAnimationFrame` — supported in all current major browsers (Chrome, Safari, Firefox, Edge).
