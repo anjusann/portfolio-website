@@ -299,6 +299,13 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
 .browser-mock--lg .browser-canvas{ min-height: 420px; }
 .browser-mock--sm .browser-canvas{ min-height: 200px; padding: 20px; }
 
+.browser-canvas.has-screenshot{ padding:0; min-height:0; overflow:hidden; }
+.browser-canvas.has-screenshot img{
+  width:100%; height:auto; display:block;
+  transition: transform .6s var(--ease);
+}
+.project:hover .browser-canvas.has-screenshot img{ transform: scale(1.02); }
+
 .mock-nav{ height:10px; width:36%; background: var(--border-p-strong); border-radius:2px; margin-bottom: 36px; }
 .mock-hero{ display:flex; flex-direction:column; gap:14px; margin-bottom: 44px; }
 .mock-line{ height:12px; background: var(--border-p-strong); border-radius:2px; }
